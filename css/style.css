@@ -1,0 +1,145 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.outer{
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.inner-box{
+	width: calc(100%/3);
+	background-size: cover;
+	background-clip: border-box;
+	background-position: center;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+	overflow: hidden;
+	box-sizing: border-box; /*faz com que as paddings não aumentem a width e a height do elemento*/
+
+	transition: all 500ms ease;
+	-webkit-box-shadow:inset 0 0 500px 0 rgba(0,0,0,0.7);
+	box-shadow:inset 0 0 500px 0 rgba(0,0,0,0.7);
+	filter:sepia(0.9);
+
+}
+
+.inner-box:hover{
+
+	filter:sepia(0);
+}
+
+
+.inner-box > h3{
+	transition: all 500ms ease;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	min-height: 50px;
+	height: 10%;
+
+  bottom: 0;
+  font-size: 1rem;
+
+	font-family: 'Permanent Marker', cursive;
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px 10px;
+	-webkit-box-shadow:inset 0 0 0 0 rgba(255,111,2,0.0);
+	box-shadow:inset 0 0 0 0 rgba(255,111,2,0.0);
+	text-shadow: 0 0 2px #fff;
+}
+
+.inner-box:hover > h3{
+	height: 100%;
+  font-size: 42px;
+  bottom: 0;
+	background-color: rgba(81,39,7, 0.5);
+	/*padding:  35% 10px;*/
+	-webkit-box-shadow:inset 0 0 40px 15px rgba(255,111,2,0.5);
+	box-shadow:inset 0 0 40px 15px rgba(255,111,2,0.5);
+	text-shadow: 0 0 20px #ff6f02;
+
+}
+
+.inner-box > p {
+	transition: all 2s linear;
+
+	box-sizing: border-box;
+	/* alinha no centro vertical*/
+	width: 100%;
+	text-align: center;
+
+	/* para alinha texto ao centro vertical*/
+	position: absolute;
+  opacity: 0;
+
+  bottom: 0;
+  font-size: 14px;
+
+	font-family: 'Permanent Marker', cursive;
+	text-shadow: 0 0 2px #fff;
+
+}
+
+.inner-box:hover > p {
+	transition: all 2s linear;
+  opacity: 1;
+  bottom: 20px;
+
+}
+
+#trainee1{
+	background-image: url('imgs/ErickGushiken.jpeg');
+}
+
+#trainee2{
+	background-image: url('imgs/GabrielAkio.jpeg');
+}
+
+#trainee3{
+	background-image: url('imgs/GabrielMartins.jpg');
+}
+
+#trainee4{
+	background-image: url('imgs/GiuliaCardella.jpeg');
+}
+
+#trainee5{
+	background-image: url('imgs/GustavoCarvas.jpeg');
+}
+
+#trainee6{
+	background-image: url('imgs/RodrigoMagaldi.jpg');
+}
+
+
+@media screen and (max-width: 700px){
+	.inner-box{
+		width: calc(100%/2);
+	}
+}
+
+
+@media screen and (max-width: 400px){
+	.inner-box{
+		width: 100%;
+	}
+}
