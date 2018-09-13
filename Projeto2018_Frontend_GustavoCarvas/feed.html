@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>PiuPiuwer</title>
+    <link rel="icon" href="pj.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+</head>
+<body>
+    <header class="titulo">
+        
+        <a class="site">PiuPiuwer</a>
+        <img class="logo" src="twitter.png" alt="Logo PiuPiuwer">
+        <form class="pesquisa">
+            <textarea id="search" name="search" cols="60" rows="1" placeholder="pesquise por pessoas aqui"></textarea>
+            <button type="submit">Pesquisar</button>
+        </form>
+                
+    </header>    
+    <nav>
+        <ul>
+
+            <li><a class="feed" href= "feed.html">Feed</a></li>
+            <li><a class="perfilnav" href="perfil.html">Perfil</a></li>
+            <li><a class="amigos" href="#">Amigos</a></li>
+            <li><a class="configuracoes" href="#">Configurações</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <form class="opcao">
+            <div class="caixaopcao">
+                <label for="post"><h1>Conte aos seus amigos o que você esta pensando!</h1></label>
+                <textarea id="post" name="post" cols="60" rows="5" placeholder="Digite aqui sua mensagem"></textarea>
+                <fieldset>
+                    <legend>Defina a cara do seu post!</legend>
+                    <h1 class="corfundo">Cor de fundo:</h1>
+                    <select>
+                      <option value="volvo">Azul</option>
+                      <option value="saab">Verde</option>
+                      <option value="opel">Amarelo</option>
+                      <option value="audi">Vermelho</option>
+                    </select>
+                    <h1 class="tipoborda">Tipo de borda:</h1>
+                    <select>
+                      <option value="dotted">Pontilhada</option>
+                      <option value="solid">Contínua</option>
+                      <option value="segmented">Tracejada</option>
+                      <option value="without">Sem borda</option>
+                    </select>
+                    <h1 class="corborda">Cor da borda:</h1>
+                    <select>
+                      <option value="volvo">Azul</option>
+                      <option value="saab">Amarelo</option>
+                      <option value="opel">Verde</option>
+                      <option value="audi">Vermelho</option>
+                    </select>
+                </fieldset>
+                <button type="submit">Postar</button>
+            </div>
+        </form>
+        <div class="postagem">
+            <img class="foto" src="perfil.png" alt="Foto do usuário">
+            <h1><a href="perfil.html">Gustavo Carvas</a></h1>
+            <p>Star Wars é a melhor coisa que a humanidade já produziu e tudo que veio depois é irrelevante</p>
+            <button class="echo">Echo 1.1K</button>
+            <button class="like">Like 10K</button>
+        
+        
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </main>
