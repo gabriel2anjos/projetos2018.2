@@ -4,12 +4,22 @@
 <head>
 	<title>Treinamentos 2018.2</title>
 	<link href="css/style.css" rel="stylesheet" />
+	<script type="text/javascript" src="css/keypress.js"></script>
 </head>
 
 <body>
+	<script>
+		console.log("a")
+		var listener = new window.keypress.Listener();
+		listener.sequence_combo("b r a b o", function () {
+			window.location.replace("/projetos2018.1/index.html");
+		}, true);
+	</script>
+
+
 
 	<div class="outer">
-		<div class="inner-box" id="trainee1" onclick="location.href='Projeto_2018_Frontend_Erick_Gushiken/feed.html';">
+		<div class="inner-box" id="trainee1" onclick="location.href='Projeto_2018_Frontend_ErickGushiken/feed.html';">
 			<h3>Erick Gushiken</h3>
 		</div>
 
@@ -21,8 +31,8 @@
 			<h3>Gabriel Duarte</h3>
 		</div>
 
-		<div class="inner-box" id="trainee4" onclick="location.href='Projeto2018_Frontend_Giulia_Cardella/feed.html';">
-			<h3>Giulia Cardela</h3>
+		<div class="inner-box" id="trainee4" onclick="location.href='Projeto_2018_Frontend_GiuliaCardella/feed.html';">
+			<h3>Giulia Cardella</h3>
 		</div>
 
 		<div class="inner-box" id="trainee5" onclick="location.href='Projeto2018_Frontend_GustavoCarvas/feed.html';">
